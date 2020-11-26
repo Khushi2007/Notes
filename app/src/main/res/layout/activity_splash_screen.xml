@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.SplashScreenActivity"
+    android:background="@color/colorPrimary">
+
+    <ImageView
+        android:id="@+id/imageLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_300sdp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/notes_splash_screen"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_50sdp"/>
+
+    <TextView
+        android:id="@+id/noteTextSplashScreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageLogo"
+        android:text="NOTES"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/_50ssp"
+        android:fontFamily="@font/ubuntu_bold"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/splashScreenTagLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/noteTextSplashScreen"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:text="A part of your everyday life"
+        android:textSize="@dimen/_18ssp"
+        android:fontFamily="@font/ubuntu_regular"
+        android:textColor="@color/colorAccent"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
